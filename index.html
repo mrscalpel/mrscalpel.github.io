@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eldho M. Abraham - Senior DevOps Engineer with 8+ years of experience in cloud infrastructure, Terraform, and AWS.">
-    <meta name="keywords" content="DevOps, SRE, AWS, Azure, Terraform, Kubernetes, Infrastructure as Code">
+    <meta name="description" content="Eldho M. Abraham - Senior DevOps Engineer with 8+ years of experience in multi-cloud infrastructure (AWS & Azure), Terraform, and security compliance.">
+    <meta name="keywords" content="DevOps, SRE, AWS, Azure, Multi-cloud, Terraform, Kubernetes, Infrastructure as Code, CI/CD, Security, Compliance">
     <meta name="author" content="Eldho M. Abraham">
     <title>Eldho M. Abraham - Senior DevOps Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -15,38 +16,45 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
-            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #000000; /* AMOLED black */
+            color: #E0E0E0; /* Light grey for readability */
             line-height: 1.6;
             min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
         }
 
         .container {
             max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            width: 100%;
+            background-color: #1A1A1A; /* Dark grey panel */
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+            padding: 30px;
         }
 
         /* Header Section */
         .header {
             text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 2px solid #00d4ff;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333333; /* Subtle separator */
         }
 
         .header h1 {
-            font-size: 2.5em;
-            color: #00d4ff;
-            margin-bottom: 10px;
+            font-size: 2.8em;
+            color: #00BFFF; /* Deep Sky Blue for emphasis */
+            margin-bottom: 8px;
             font-weight: 700;
         }
 
         .header .title {
-            font-size: 1.3em;
-            color: #64b5f6;
-            margin-bottom: 20px;
+            font-size: 1.4em;
+            color: #00CED1; /* Dark Cyan */
+            margin-bottom: 15px;
             font-weight: 500;
         }
 
@@ -54,7 +62,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 25px;
             margin-bottom: 15px;
         }
 
@@ -62,16 +70,17 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            color: #B0B0B0;
         }
 
         .contact-item a {
-            color: #00d4ff;
+            color: #00BFFF;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .contact-item a:hover {
-            color: #64b5f6;
+            color: #00CED1;
             text-decoration: underline;
         }
 
@@ -82,75 +91,78 @@
         }
 
         .social-links a {
-            color: #00d4ff;
+            color: #00CED1;
             text-decoration: none;
-            transition: color 0.3s ease;
             font-weight: 500;
+            transition: color 0.3s ease;
         }
 
         .social-links a:hover {
-            color: #64b5f6;
+            color: #00BFFF;
         }
 
         /* Section Styling */
         section {
-            margin-bottom: 35px;
+            margin-bottom: 30px;
         }
 
         section h2 {
-            font-size: 1.8em;
-            color: #00d4ff;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #00d4ff;
+            font-size: 2em;
+            color: #00BFFF;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #333333;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-weight: 500;
         }
 
         /* Executive Summary */
         .summary {
-            background: rgba(100, 181, 246, 0.05);
+            background-color: #222222; /* Slightly lighter dark grey */
             padding: 20px;
-            border-left: 4px solid #00d4ff;
+            border-left: 4px solid #00BFFF;
             border-radius: 4px;
-            font-size: 0.95em;
-            line-height: 1.8;
+            font-size: 1.05em;
+            line-height: 1.7;
+            color: #D0D0D0;
         }
 
         /* Technical Competencies */
         .competencies {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
 
         .competency-group {
-            background: rgba(100, 181, 246, 0.05);
-            padding: 15px;
+            background-color: #222222;
+            padding: 18px;
             border-radius: 4px;
-            border-left: 3px solid #64b5f6;
+            border-left: 3px solid #00CED1;
+            color: #C0C0C0;
         }
 
         .competency-group h3 {
-            color: #64b5f6;
-            margin-bottom: 10px;
-            font-size: 0.95em;
-            font-weight: 600;
+            color: #00CED1;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            font-weight: 500;
         }
 
         .competency-group p {
-            color: #b0b0b0;
-            font-size: 0.9em;
-            line-height: 1.6;
+            font-size: 0.95em;
+            line-height: 1.5;
         }
 
         /* Professional Experience */
         .job {
-            background: rgba(100, 181, 246, 0.05);
+            background-color: #222222;
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 4px;
-            border-left: 4px solid #00d4ff;
+            border-left: 4px solid #00BFFF;
+            color: #D0D0D0;
         }
 
         .job-header {
@@ -163,29 +175,30 @@
         }
 
         .job-title {
-            font-size: 1.1em;
-            color: #00d4ff;
+            font-size: 1.2em;
+            color: #00BFFF;
             font-weight: 600;
         }
 
         .job-company {
-            color: #64b5f6;
+            color: #00CED1;
             font-weight: 500;
+            font-size: 1.05em;
         }
 
         .job-date {
-            color: #888;
-            font-size: 0.9em;
+            color: #A0A0A0;
+            font-size: 0.95em;
             font-style: italic;
         }
 
         .job-location {
-            color: #888;
-            font-size: 0.9em;
+            color: #A0A0A0;
+            font-size: 0.95em;
         }
 
         .job-description {
-            margin-top: 12px;
+            margin-top: 15px;
         }
 
         .job-description ul {
@@ -194,124 +207,126 @@
         }
 
         .job-description li {
-            color: #b0b0b0;
             margin-bottom: 8px;
-            padding-left: 20px;
+            padding-left: 25px;
             position: relative;
+            color: #C0C0C0;
         }
 
         .job-description li:before {
-            content: "▸";
+            content: "\2022"; /* Unicode bullet point */
             position: absolute;
             left: 0;
-            color: #00d4ff;
+            color: #00CED1;
+            font-weight: bold;
+            font-size: 1.2em;
+            line-height: 1;
         }
 
         /* Education & Certifications */
         .edu-item, .cert-item {
-            background: rgba(100, 181, 246, 0.05);
-            padding: 15px;
-            margin-bottom: 12px;
+            background-color: #222222;
+            padding: 18px;
+            margin-bottom: 15px;
             border-radius: 4px;
-            border-left: 3px solid #64b5f6;
+            border-left: 3px solid #00CED1;
+            color: #C0C0C0;
         }
 
         .edu-degree, .cert-name {
-            color: #00d4ff;
+            color: #00BFFF;
             font-weight: 600;
             margin-bottom: 5px;
+            font-size: 1.1em;
         }
 
         .edu-school, .cert-issuer {
-            color: #b0b0b0;
+            color: #A0A0A0;
             font-size: 0.95em;
         }
 
         /* Additional Information */
         .additional {
-            background: rgba(100, 181, 246, 0.05);
-            padding: 15px;
+            background-color: #222222;
+            padding: 20px;
             border-radius: 4px;
-            border-left: 3px solid #64b5f6;
+            border-left: 4px solid #00BFFF;
+            color: #D0D0D0;
         }
 
         .additional p {
-            color: #b0b0b0;
-            font-size: 0.95em;
+            font-size: 1.05em;
+        }
+
+        .additional strong {
+            color: #00CED1;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 20px;
+            }
             .header h1 {
-                font-size: 2em;
+                font-size: 2.2em;
             }
-
             .header .title {
-                font-size: 1.1em;
+                font-size: 1.2em;
             }
-
             .contact-info {
                 flex-direction: column;
-                gap: 10px;
+                gap: 15px;
             }
-
             .competencies {
                 grid-template-columns: 1fr;
             }
-
             .job-header {
                 flex-direction: column;
+                align-items: flex-start;
             }
-
-            .container {
-                padding: 20px 15px;
-            }
-
             section h2 {
-                font-size: 1.5em;
+                font-size: 1.7em;
             }
         }
 
         /* Print Styles */
         @media print {
             body {
-                background: white;
-                color: #000;
+                background-color: white;
+                color: #000000;
+                padding: 0;
+                display: block;
             }
-
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                background-color: white;
+                padding: 0;
+            }
             .header {
-                border-bottom: 1px solid #000;
+                border-bottom: 1px solid #000000;
             }
-
-            section h2 {
-                color: #000;
-                border-bottom: 1px solid #000;
+            .header h1, .header .title, section h2 {
+                color: #000000;
             }
-
-            .job, .edu-item, .cert-item, .competency-group, .additional, .summary {
-                background: white;
-                border: 1px solid #ccc;
-            }
-
             .contact-item a, .social-links a {
-                color: #0066cc;
+                color: #000000;
             }
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
+            .job, .edu-item, .cert-item, .competency-group, .summary, .additional {
+                background-color: white;
+                border-left: 1px solid #000000;
+                box-shadow: none;
+                color: #000000;
             }
-            to {
-                opacity: 1;
-                transform: translateY(0);
+            .job-title, .job-company, .edu-degree, .cert-name, .additional strong {
+                color: #000000;
             }
-        }
-
-        .container {
-            animation: fadeIn 0.6s ease-in-out;
+            .job-description li:before {
+                color: #000000;
+            }
         }
     </style>
 </head>
@@ -324,11 +339,11 @@
             
             <div class="contact-info">
                 <div class="contact-item">
-                    <span>📧</span>
+                    <span>&#9993;</span> <!-- Email icon -->
                     <a href="mailto:eldhomaniabraham@gmail.com">eldhomaniabraham@gmail.com</a>
                 </div>
                 <div class="contact-item">
-                    <span>📱</span>
+                    <span>&#9742;</span> <!-- Phone icon -->
                     <a href="tel:+917559870000">+91 7559 870 000</a>
                 </div>
             </div>
@@ -343,7 +358,7 @@
         <section>
             <h2>Executive Summary</h2>
             <div class="summary">
-                <p>Performance-driven DevOps/SRE Specialist with 8+ years of experience in architecting, securing, and automating cloud-native infrastructures. Expert in Infrastructure as Code (IaC) using Terraform to manage full-stack environments. Proven track record of reducing AWS cloud costs by 25% and migrating legacy workloads to AWS ECS Fargate. Strong advocate for SRE principles, specializing in CI/CD automation, proactive monitoring, and highly available systems. Possesses a strong understanding of Azure cloud services, with hands-on experience in Azure RBAC and Policies, and a proficiency in bridging AWS services to their Azure equivalents, making me well-suited for an Multi-Cloud role.</p>
+                <p>Performance-driven DevOps/SRE Specialist with 8+ years of experience in architecting, securing, and automating <strong>multi-cloud infrastructures (AWS & Azure)</strong>. Expert in Infrastructure as Code (IaC) using Terraform to manage full-stack environments. Proven track record of reducing AWS cloud costs by 25% and migrating legacy workloads to AWS ECS Fargate, alongside extensive experience in Azure cloud services, including Azure RBAC and Policies. Strong advocate for SRE principles, specializing in CI/CD automation, proactive monitoring, and highly available systems, ensuring **industry-grade security standards and compliance** across all deployments.</p>
             </div>
         </section>
 
